@@ -11,13 +11,6 @@ h1 {
 
 /*Contenu de la page Galerie*/
 
-#galerieBody {
-  background: URL("../images/backgroundGalerie.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-filter: blur(10px);
-}
-
 #galerieBody .intro1 {
   color: darkorchid;
 }
