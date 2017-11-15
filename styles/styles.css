@@ -1,9 +1,53 @@
-*{
+* {
   color: white;
 }
-h1{
+
+h1 {
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  color:green;
+  color: green;
+}
+
+/*Contenu de la page Galerie*/
+
+#galerie {
+  width: 840px;
+  height: 316px;
+  margin: 70px auto;
+  padding-left: 1px;
+}
+
+#galerie li {
+  list-style: none;
+  float: left;
+  width: 270px;
+  height: 150px;
+  margin: 5px;
+  position: relative;
+}
+
+#galerie li:nth-child(4) {
+  clear: left;
+}
+
+#galerie li img {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  height: 150px;
+  width: auto;
+  margin: 0;
+  box-shadow: 0 0 8px black;
+  transition: all .4s cubic-bezier(.59, .58, .24, 1.52);
+}
+
+#galerie li:hover img {
+  z-index: 5;
+  transform: scale(1.4);
+  box-shadow: 0 0 20px black;
+}
+
+#galerie:hover li:not(:hover) img {
+  filter: blur(3px);
 }
