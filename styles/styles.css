@@ -51,7 +51,7 @@ h1 {
 
 #article ul li a {
   color: #2b75ff;
-  text-decoration: underline solid #12316b;
+  text-decoration: none;
 }
 
 #article ul li {
