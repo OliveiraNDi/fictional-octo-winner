@@ -11,6 +11,71 @@ h1 {
 
 /*Contenu de la page Galerie*/
 
+/* Menu */
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin: 0px;
+  padding: 50px;
+  list-style: none;
+  background: linear-gradient(to bottom, #0c0c0c, #212121);
+  box-shadow: 0px 6px 67px -12px rgba(0, 0, 0, 0.83);
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: 26pt;
+  color: white;
+  text-shadow: 0px 4px 12px rgba(178, 178, 178, 1);
+}
+
+/* Article */
+
+#article .intro1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#article ul {
+  list-style: none;
+  margin: 25px;
+  padding: 20px 30px;
+}
+
+#article ul li img {
+  width: 90px;
+  height: 90px;
+}
+
+#article ul li a {
+  color: #2b75ff;
+  text-decoration: underline solid #12316b;
+}
+
+#article ul li {
+  margin: 20px;
+  display: flex;
+}
+
+#article ul li p {
+  margin: 5px;
+}
+
+#article li {
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+  transition: all .3s cubic-bezier(.29, .59, .47, .8);
+}
+
+#article li:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+/* Footer */
+
 .imageDeFond {
   /* La position est fixée en haut à gauche, en arrière-plan de la page */
   position: fixed;
@@ -19,7 +84,7 @@ h1 {
   z-index: 1;
   /* On indique l'image de fond et les dimensions qu'elle occupe */
   display: block;
-  background-image: url('URL("../images/backgroundGalerie.png");');
+  background-image: url('URL("../images/backgroundGalerie.png")');
   width: 100%;
   height: 100%;
   /* Filtre de floutage CSS3 standard */
